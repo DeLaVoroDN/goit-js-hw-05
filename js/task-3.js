@@ -1,10 +1,14 @@
-'use strict';
+'use strict'; // Строгий режим, который помогает выявить и предотвратить ошибки в коде
+
 const sortByDescendingFriendCount = users =>
   users.toSorted(
+    // Сортируем пользователей по убыванию количества друзей
     (firstFriend, lastFriend) => lastFriend.friends.length - firstFriend.friends.length
   );
+
 console.log(
   sortByDescendingFriendCount([
+    // Выводим результат сортировки пользователей по убыванию количества друзей
     {
       name: 'Moore Hensley',
       friends: ['Sharron Pace'],
@@ -42,40 +46,3 @@ console.log(
     },
   ])
 );
-// [
-//   {
-//     name: "Ross Vazquez",
-//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-//     gender: "male"
-//   },
-//   {
-//     name: "Sharlene Bush",
-//     friends: ["Briana Decker", "Sharron Pace"],
-//     gender: "female"
-//   },
-//   {
-//     name: "Elma Head",
-//     friends: ["Goldie Gentry", "Aisha Tran"],
-//     gender: "female"
-//   },
-//   {
-//     name: "Carey Barr",
-//     friends: ["Jordan Sampson", "Eddie Strong"],
-//     gender: "male"
-//   },
-//   {
-//     name: "Blackburn Dotson",
-//     friends: ["Jacklyn Lucas", "Linda Chapman"],
-//     gender: "male"
-//   },
-//   {
-//     name: "Sheree Anthony",
-//     friends: ["Goldie Gentry", "Briana Decker"],
-//     gender: "female"
-//   },
-//   {
-//     name: "Moore Hensley",
-//     friends: ["Sharron Pace"],
-//     gender: "male"
-//   }
-// ]

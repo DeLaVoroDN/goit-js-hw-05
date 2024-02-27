@@ -1,10 +1,15 @@
-'use strict';
+'use strict'; // Строгий режим, который помогает выявить и предотвратить ошибки в коде
+
 const getUserNames = users => {
-  const names = users.map(user => user.name);
-  return names;
+  // Функция getUserNames принимает массив пользователей и возвращает массив их имен
+
+  const names = users.map(user => user.name); // Извлекаем имена пользователей с помощью метода map
+  return names; // Возвращаем массив имен пользователей
 };
+
 console.log(
   getUserNames([
+    // Выводим результат вызова getUserNames с набором пользователей
     {
       name: 'Moore Hensley',
       email: 'moorehensley@indexia.com',
@@ -41,4 +46,4 @@ console.log(
       balance: 2764,
     },
   ])
-); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
+);
